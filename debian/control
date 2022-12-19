@@ -1,0 +1,17 @@
+Source: radxa-archive-keyring
+Maintainer: "Radxa Computer Co., Ltd" <dev@radxa.com>
+Section: misc
+Priority: optional
+Standards-Version: 4.6.0
+Build-Depends: debhelper (>=12~),
+               devscripts,
+               lintian,
+
+Package: radxa-archive-keyring
+Architecture: all
+Section: misc
+Priority: optional
+Depends: ${misc:Depends},
+Description: Radxa APT archive keyring
+ This package contains the keyrings used to sign
+ Radxa APT repositories.
