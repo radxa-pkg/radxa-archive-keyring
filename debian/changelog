@@ -1,3 +1,9 @@
+radxa-archive-keyring (0.1.1) stable; urgency=medium
+
+  * Add Radxa APT Key 2023
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 03 Mar 2023 10:32:47 +0800
+
 radxa-archive-keyring (0.1.0) stable; urgency=medium
 
   * Initial release
