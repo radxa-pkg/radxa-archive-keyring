@@ -1,3 +1,4 @@
 /.vscode*
 /SOURCE
 /VERSION
+**/*.asc

@@ -8,6 +8,15 @@ MANDIR ?= $(PREFIX)/share/man
 all: build
 
 #
+# Maintaince
+#
+.PHONY: new-key
+new-key:
+	gpg --quick-gen-key "Radxa APT Key $(shell date +%Y) <dev@radxa.com>"
+	gpg --output keyrings/radxa-archive-keyring-$(shell date +%Y).gpg --armor --export "Radxa APT Key $(shell date +%Y) <dev@radxa.com>"
+	gpg --output keyrings/radxa-archive-keyring-$(shell date +%Y).asc --armor --export-secret-keys "Radxa APT Key $(shell date +%Y) <dev@radxa.com>"
+
+#
 # Test
 #
 .PHONY: test
