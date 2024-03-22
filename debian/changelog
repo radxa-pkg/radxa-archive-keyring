@@ -1,3 +1,19 @@
+radxa-archive-keyring (0.1.2) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Do not create source package
+  * Add key maintaince script
+  * chore: add 2024 keyring
+  * ci: sync with rockchip-prebuilt
+
+  [ dependabot[bot] ]
+  * Bump actions/checkout from 3 to 4
+  * Bump actions/upload-artifact from 3 to 4
+  * Bump actions/download-artifact from 3 to 4
+  * Bump softprops/action-gh-release from 1 to 2
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 22 Mar 2024 07:43:26 +0000
+
 radxa-archive-keyring (0.1.1) stable; urgency=medium
 
   * Add Radxa APT Key 2023
