@@ -12,8 +12,10 @@ all: build
 #
 .PHONY: new-key
 new-key:
-	gpg --quick-gen-key "Radxa APT Key $(shell date +%Y) <dev@radxa.com>" rsa4096 cert $(shell date -I -d "5 years")
-	gpg --output keyrings/radxa-archive-keyring-$(shell date +%Y).gpg --armor --export "Radxa APT Key $(shell date +%Y) <dev@radxa.com>"
+	gpg --delete-secret-key "Radxa APT Key $(shell date +%Y) <dev@radxa.com>" 2>/dev/null || true
+	gpg --delete-key "Radxa APT Key $(shell date +%Y) <dev@radxa.com>" 2>/dev/null || true
+	gpg --quick-gen-key "Radxa APT Key $(shell date +%Y) <dev@radxa.com>" rsa4096 sign $(shell date -I -d "5 years")
+	gpg --output keyrings/radxa-archive-keyring-$(shell date +%Y).gpg --export "Radxa APT Key $(shell date +%Y) <dev@radxa.com>"
 	gpg --output keyrings/radxa-archive-keyring-$(shell date +%Y).asc --armor --export-secret-keys "Radxa APT Key $(shell date +%Y) <dev@radxa.com>"
 
 #
