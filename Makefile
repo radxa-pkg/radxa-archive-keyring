@@ -14,7 +14,9 @@ all: build
 new-key:
 	gpg --delete-secret-key "Radxa APT Key $(shell date +%Y) <dev@radxa.com>" 2>/dev/null || true
 	gpg --delete-key "Radxa APT Key $(shell date +%Y) <dev@radxa.com>" 2>/dev/null || true
-	gpg --quick-gen-key "Radxa APT Key $(shell date +%Y) <dev@radxa.com>" rsa4096 sign $(shell date -I -d "5 years")
+# Follow Debian keyring life time
+# https://ftp-master.debian.org/keys.html
+	gpg --quick-gen-key "Radxa APT Key $(shell date +%Y) <dev@radxa.com>" rsa4096 sign $(shell date -I -d "8 years")
 	gpg --output keyrings/radxa-archive-keyring-$(shell date +%Y).gpg --export "Radxa APT Key $(shell date +%Y) <dev@radxa.com>"
 	gpg --output keyrings/radxa-archive-keyring-$(shell date +%Y).asc --armor --export-secret-keys "Radxa APT Key $(shell date +%Y) <dev@radxa.com>"
 
