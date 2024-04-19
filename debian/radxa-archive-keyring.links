@@ -1,0 +1,3 @@
+#!/usr/bin/dh-exec
+
+/usr/share/keyrings/radxa-archive-keyring-2024.gpg /usr/share/keyrings/radxa-archive-keyring.gpg
