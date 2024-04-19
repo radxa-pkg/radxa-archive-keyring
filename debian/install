@@ -1,1 +1,1 @@
-keyrings usr/share/
+keyrings/*.gpg usr/share/keyrings
