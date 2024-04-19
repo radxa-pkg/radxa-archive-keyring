@@ -1,3 +1,12 @@
+radxa-archive-keyring (0.2.0) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * fix: sync with Debian keyring life time policy
+  * chore: update default keyring to 2024
+  * fix: never install private key
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 19 Apr 2024 15:09:45 +0800
+
 radxa-archive-keyring (0.1.3) jammy; urgency=medium
 
   [ ZHANG Yuntian ]

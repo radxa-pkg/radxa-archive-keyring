@@ -1,0 +1,10 @@
+radxa-archive-keyring (0.2.0) jammy; urgency=medium
+
+  Change the default keyring to radxa-archive-keyring-2024.gpg. Currently
+  maintained apt archives are dual signed with both 2023 (old default) and 2024
+  keyrings, to ensure smooth migration.
+
+  radxa-archive-keyring-2023.gpg will be expired on 2025-03-02. After this date,
+  our apt archives will no longer be signed by this keyring.
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 19 Apr 2024 15:09:45 +0800
