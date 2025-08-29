@@ -1,5 +1,9 @@
 # radxa-archive-keyring
 
-[![Release](https://github.com/radxa-pkg/radxa-archive-keyring/actions/workflows/release.yml/badge.svg)](https://github.com/radxa-pkg/radxa-archive-keyring/actions/workflows/release.yml)
+[![Release](https://github.com/radxa-pkg/radxa-archive-keyring/actions/workflows/release.yaml/badge.svg)](https://github.com/radxa-pkg/radxa-archive-keyring/actions/workflows/release.yaml)
 
-Radxa APT archive keyring
+## Build
+
+1. `git clone --recurse-submodules https://github.com/radxa-pkg/radxa-archive-keyring.git`
+2. Open in [`devcontainer`](https://code.visualstudio.com/docs/devcontainers/containers)
+3. `make deb`
