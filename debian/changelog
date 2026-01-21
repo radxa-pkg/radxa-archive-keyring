@@ -1,3 +1,16 @@
+radxa-archive-keyring (0.2.1) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * chore: create 2025 keyring
+  * fix: clean up leftover files
+  * fix: import general .gitignore
+  * fix: add 2026 keyring
+
+  [ CodeChenL ]
+  * feat: add pkg.conf.template
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Wed, 21 Jan 2026 06:14:07 +0000
+
 radxa-archive-keyring (0.2.0) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
