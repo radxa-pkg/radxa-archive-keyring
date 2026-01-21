@@ -3,5 +3,6 @@
 /files
 /radxa-archive-keyring
 /*.debhelper.log
-/*.postrm.debhelper
+/*.*.debhelper
 /*.substvars
+/tmp
