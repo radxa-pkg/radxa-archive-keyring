@@ -1,3 +1,11 @@
+radxa-archive-keyring (0.2.2) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * fix: update debian gitignore
+  * fix: regenerate 2026 key
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Wed, 21 Jan 2026 07:24:15 +0000
+
 radxa-archive-keyring (0.2.1) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
